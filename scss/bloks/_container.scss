@@ -1,0 +1,91 @@
+.container{
+    max-width: 1280px;
+    padding: 0px 15px;
+    margin: 0 auto;
+    
+    // padding-top: 200px;
+  
+}
+.container__aforizm{
+    font-size: 56px;
+    color:  #e723ac;
+}
+.container__list {
+    width: 600px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+
+}
+.container__item{
+    padding: 0;
+    margin: 0;
+}
+.container__main-img{
+    width: 50%;
+}
+.container__img{
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+    &:hover,&:active{
+        box-shadow: 2px 2px 10px 5px #aaaaaa;
+        transition: .4s ease all;
+        transform: rotate(90deg);
+    }
+}
+.container__div{
+    padding: 20px 0px;
+    width: 100%;
+    background-color:  #333A44;;
+}
+.container__name{
+    color: darkblue;
+    margin-bottom: 80px;
+    margin-right: auto;
+}
+.container__main{
+    display: flex;
+}
+.container__content{
+    width: 50%;
+}
+@media screen and (max-width:  719px) {
+    .container{
+        padding: 0px 15px;
+        max-width: 749px;
+    }
+  .container__main{
+      flex-direction: column;
+  }
+  .container__div{
+      max-width: 100%;
+  }
+  .container__content{
+    width: 300px;
+  }
+  .container__main-img{
+    width: 300px;
+      object-fit: contain;
+      margin: 0 auto;
+  }
+  .container__list{
+    max-width: 300px;
+  }
+  .container__aforizm{
+      max-width: 100%;
+      font-size: 28px;
+  }
+  .container__name{
+      width: 300px; 
+        
+      font-size: 20px;
+  }
+  .container__img{
+      width: 40px;
+      height: 40px;
+  }
+}
